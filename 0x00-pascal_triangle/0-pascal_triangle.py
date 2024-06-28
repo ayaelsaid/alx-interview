@@ -10,9 +10,9 @@ def pascal_triangle(n):
     n (int): Number of rows in Pascal's triangle to print.
 
     Returns:
-    None
+    list: triangle represented as a list of lists
     """
-    triangle = list()  # Initialize Pascal's triangle as an empty list
+    triangle = list()  # Initialize triangle as an empty list
 
     if n <= 0:
         return triangle
