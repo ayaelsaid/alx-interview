@@ -1,10 +1,20 @@
 #!/usr/bin/python3
+'''function that prints pascal_triangle'''
 
 def pascal_triangle(n):
+    """
+    Print Pascal's triangle up to n rows.
+
+    Parameters:
+    n (int): Number of rows in Pascal's triangle to print.
+
+    Returns:
+    None
+    """
     if n <= 0:
-        return []
+        return
     
-    triangle = [[1]]  # Initialize the triangle with the first row
+    triangle = [[1]]  # Initialize the triangle with the first row [1]
     
     for k in range(1, n):
         last_row = triangle[-1]
