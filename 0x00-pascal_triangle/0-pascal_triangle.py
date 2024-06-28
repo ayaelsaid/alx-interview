@@ -12,10 +12,10 @@ def pascal_triangle(n):
     Returns:
     None
     """
-    pascal_triangle = list()  # Initialize Pascal's triangle as an empty list
+    triangle = list()  # Initialize Pascal's triangle as an empty list
 
     if n <= 0:
-        return pascal_triangle
+        return triangle
 
     # Add first row [1]
     triangle.append([1])
