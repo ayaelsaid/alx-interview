@@ -1,16 +1,16 @@
 #!/usr/bin/python3
-"""Method that calculates the fewest number of operations."""
+"""Method that calculates number of operations."""
 
 
 def minOperations(n):
     """
-    Calculate the fewest number of operations needed to reach n 'H' characters.
+    Calculate number of operations needed to reach n
 
     Args:
-        n (int): The target number of 'H' characters.
+        n (int): The target number
 
     Returns:
-        int: The minimum number of operations required, or 0 if n is impossible.
+        int: The minimum number , or
     """
     if n <= 0:
         return 0
