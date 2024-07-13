@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """method that calculates the fewest number of operations"""
 
+
 def minOperations(n):
     """
     method that calculates the fewest number of operations
