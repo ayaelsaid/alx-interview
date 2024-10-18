@@ -37,6 +37,7 @@ def isWinner(x, nums):
     """
     ben = 0
     maria = 0
+
     if x < 10000:
         for i in range(x):
             n = nums[i]
@@ -49,8 +50,7 @@ def isWinner(x, nums):
                 if used_primes % 2 == 0:
                     ben += 1
                 else:
-                        maria += 1
-                        
+                    maria += 1
     if ben > maria:
         return "Ben"
     elif maria > ben:
