@@ -47,7 +47,7 @@ def isWinner(x, nums):
                 primes = find_prime(n)
                 used_primes = len(primes)
                 if used_primes % 2 == 0:
-                        ben += 1
+                    ben += 1
                 else:
                         maria += 1
                         
@@ -56,4 +56,4 @@ def isWinner(x, nums):
     elif maria > ben:
         return "Maria"
     else:
-        return "None"
+        return None
