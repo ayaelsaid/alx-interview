@@ -44,13 +44,12 @@ def isWinner(x, nums):
             if n < 2:
                 ben += 1
                 continue
-            if n < 10000:
-                primes = find_prime(n)
-                used_primes = len(primes)
-                if used_primes % 2 == 0:
-                    ben += 1
-                else:
-                    maria += 1
+            primes = find_prime(n)
+            used_primes = len(primes)
+            if used_primes % 2 == 0:
+                ben += 1
+            else:
+                maria += 1
     if ben > maria:
         return "Ben"
     elif maria > ben:
