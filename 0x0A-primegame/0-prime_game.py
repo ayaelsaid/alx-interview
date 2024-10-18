@@ -9,8 +9,7 @@ def isWinner(x, nums):
         x (int): The number of rounds.
         nums (list of int): List of numbers to check for each round.
     Returns:
-        str: The name of the player who won the most rounds ("Maria" or "Ben").
-             If it's a tie, return "None".
+        str: ("Maria" or "Ben") or return "None".
     """
     ben = 0
     maria = 0
@@ -31,14 +30,16 @@ def isWinner(x, nums):
 
     if ben > maria:
         return "Ben"
-    elif maria > ben:
+
+    if maria > ben:
         return "Maria"
-    else:
-        return None
+
+    return None
 
 
 def find_prime(n):
     """Find the prime numbers up to n."""
+
     if n < 2:
         return [] 
     primes = [True] * n
@@ -50,5 +51,6 @@ def find_prime(n):
             for i in range(p * p, n + 1, p):
                 primes[i - 1] = False
         p += 1
+
     all_primes = [i for i in range(2, n + 1) if primes[i - 1]]
     return all_primes
