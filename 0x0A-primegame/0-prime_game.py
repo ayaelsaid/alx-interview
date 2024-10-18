@@ -41,7 +41,8 @@ def find_prime(n):
     """Find the prime numbers up to n."""
 
     if n < 2:
-        return [] 
+        return []
+
     primes = [True] * n
     primes[0] = False
 
